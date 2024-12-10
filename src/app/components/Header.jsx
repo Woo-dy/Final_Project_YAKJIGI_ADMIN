@@ -57,14 +57,12 @@ function Page() {
                            <li
                               className="menu-options"
                               onMouseEnter={() => handleMouseEnter("userManagement")}
-                              onMouseLeave={() => handleMouseLeave("userManagement")}
                            >
                               사용자 관리
                               {hoverMenu.userManagement && (
                                  <ul className="dropdown">
                                        <li className="dropdown-item"
                                           onMouseEnter={() => handleSubMouseEnter("userManagementSub1")}
-                                          onMouseLeave={() => handleSubMouseLeave("userManagementSub1")}
                                        >일반 회원 관리
                                           {hoverMenu.userManagementSub1 && (
                                              <ul className="dropdown-right">
@@ -76,7 +74,6 @@ function Page() {
                                        </li>
                                        <li className="dropdown-item"
                                           onMouseEnter={() => handleSubMouseEnter("userManagementSub2")}
-                                          onMouseLeave={() => handleSubMouseLeave("userManagementSub2")}
                                        >
                                           전문 회원 관리
                                           {hoverMenu.userManagementSub2 && (
